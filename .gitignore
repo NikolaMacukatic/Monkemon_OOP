@@ -416,3 +416,13 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+#Na silu dodat assets
+!x64/
+x64/*
+!x64/Debug/
+x64/Debug/*
+!x64/Debug/assets/
+!x64/Debug/assets/**
+
+
