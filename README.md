@@ -1,30 +1,37 @@
-# Monkemon_OOP
-Projekt iz OOP, Nikola Mačukatić i Ivan Josipović
+# Monkemon OOP
+Projekt iz OOP  
+Autori: Nikola Mačkatić i Ivan Josipović
 
-Za Linux:
+## Za Linux
 
-Potrebna instalacija rayliba:
-
+### Potrebna instalacija rayliba
+```bash
 git clone https://github.com/raysan5/raylib.git
 cd raylib
 mkdir build && cd build
 cmake ..
 make
 sudo make install
+```
 
-Kompajliranje:
-//NAPOMENA: potreban je g++
+### Kompajliranje
+> Napomena: potreban je `g++`
+
+```bash
 g++ src/*.cpp -o Monkemon $(pkg-config --cflags --libs raylib)
-//NAPOMENA: umijesto src, staviti put do foldera u kojem se nalazi projekt
+```
+
+### Pokretanje
+```bash
 ./Monkemon
+```
 
+---
 
-Za Windows:
+## Za Windows
+Program se pokreće preko `Monkemon.exe` datoteke.
 
-Pokreče se preko Monkemon.exe file
+---
 
-Monkemon:
-
-Sve kontrole su objašnjene korisniku unutar igre
-
-
+## Monkemon
+Sve kontrole su objašnjene korisniku unutar igre.
