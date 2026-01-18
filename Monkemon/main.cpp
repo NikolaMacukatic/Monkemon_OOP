@@ -21,15 +21,6 @@ using namespace std;
 Player player;
 CPUTrainer cpu;
 
-//GLOBALI ZA BATTLE
-bool playerTurn = true;
-bool battleOver = false;
-string battleMessage = "TTTTTT TVOJ POTEZZ!! "; //YUGIOH REFERENCE ;)
-*/
-// TESTIRAMO ----------------------------------------------------------------
-
-
-
 //GLOBALI ZA MENI
 
 float blinkT = 0.0f;
