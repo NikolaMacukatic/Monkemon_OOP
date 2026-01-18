@@ -1,6 +1,6 @@
 # Monkemon OOP
 Projekt iz OOP  
-Autori: Nikola Mačkatić i Ivan Josipović
+Autori: Nikola Mačukatić i Ivan Josipović
 
 ## Za Linux
 
