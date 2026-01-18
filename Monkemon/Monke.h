@@ -37,6 +37,10 @@ public:
     int ElementalAttack(Monke& target); 
 
     void TakeDamage(int dmg);
+
+    void Heal(int amount);
+    int GetMaxHP() const;
+
 };
 
 

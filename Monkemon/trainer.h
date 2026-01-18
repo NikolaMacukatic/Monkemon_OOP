@@ -9,6 +9,7 @@ class Trainer {
 protected:
     vector<Monke*> party;
     int activeIndex;
+    int healingItems;
 
 public:
     Trainer();
@@ -18,9 +19,11 @@ public:
     Monke* GetActiveMonke();
     bool HasRemainingMonkes();
     void SwitchToNextMonke();
+    int GetHealingItems() const;
+    bool UseHealingItem(Monke* target);
 };
 
-// ---------- DERIVED CLASSES ----------
+
 
 class Player : public Trainer {
 public:

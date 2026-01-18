@@ -46,6 +46,17 @@ int Monke::ElementalAttack(Monke& target) {
     return damage;
 }
 
+void Monke::Heal(int amount)
+{
+    hp += amount;
+    if (hp > maxHp)
+        hp = maxHp;
+}
+
+int Monke::GetMaxHP() const
+{
+    return maxHp;
+}
 
 
 FireMonke::FireMonke(const string& name, int hp, int atk)

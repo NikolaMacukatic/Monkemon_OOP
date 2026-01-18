@@ -1,7 +1,7 @@
 #include "trainer.h"
 
 
-Trainer::Trainer() : activeIndex(0) {}
+Trainer::Trainer() : activeIndex(0), healingItems(1) {}
 
 Trainer::~Trainer() {
     for (Monke* m : party) {
@@ -37,6 +37,23 @@ void Trainer::SwitchToNextMonke() {
         }
     }
 }
+
+int Trainer::GetHealingItems() const
+{
+    return healingItems;
+}
+
+bool Trainer::UseHealingItem(Monke* target)
+{
+    if (healingItems <= 0 || target == nullptr)
+        return false;
+
+    target->Heal(50);
+    healingItems--;
+    return true;
+}
+
+
 
 Player::Player() : Trainer() {}
 
